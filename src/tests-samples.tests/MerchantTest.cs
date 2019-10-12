@@ -18,7 +18,7 @@ namespace tests_samples.tests
         }
 
         [Fact]
-        public void CreateMechantOtherNameTest()
+        public void CreateMerchantOtherNameTest()
         {
             var merchant = MerchantBuilder.Instance()
                 .WithDefault()
