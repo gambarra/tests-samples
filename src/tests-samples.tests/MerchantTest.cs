@@ -16,5 +16,16 @@ namespace tests_samples.tests
             
             Assert.Equal("name_default",merchant.Name);
         }
+
+        [Fact]
+        public void CreateMechantOtherNameTest()
+        {
+            var merchant = MerchantBuilder.Instance()
+                .WithDefault()
+                .WithName("new_name")
+                .Build();
+            
+            Assert.Equal("new_name",merchant.Name);
+        }
     }
 }
